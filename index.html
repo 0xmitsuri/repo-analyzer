@@ -2,12 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Repo Analyzer</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#1a1a2e" />
+    <title>Mitsuri's AI-Powered Code Analysis</title>
+    <meta
+      name="description"
+      content="Get instant feedback on your code with AI-powered analysis and suggestions"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="assets/pfp.jpeg" />
   </head>
   <body>
+    <h1>Mitsuri's AI-Powered Code Analysis</h1>
+    <div class="input-container">
+      <input
+        type="text"
+        id="code"
+        placeholder="Paste your git repo link here"
+        class="repo-input"
+      />
+      <button onclick="roastCode()">Analyze Repo 🔎</button>
+    </div>
+    <div class="roast" id="roastOutput"></div>
+    <footer>⚠️ AI: ACTUAL INDIANS</footer>
     <script src="script.js"></script>
   </body>
 </html>
